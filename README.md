@@ -28,10 +28,10 @@ Testat în Chromium headless: 0 erori în consolă și 0 încălcări CSP pe toa
 - Resursele sunt 4 linkuri oficiale; adaugă altele ca blocuri `<a class="res-link">` în `#resurseBody`.
 
 ## Cursuri
-Cursurile sunt grupate în 6 trasee pliabile (`details.tgroup`). Datele sunt în `build.py` (listele PSI, PROF, CONS, SCO, FIR, TOT); în `index.html` fiecare curs e un `<article class="card course">`, iar culoarea traseului vine din `--g` de pe `details`.
+Cursurile sunt grupate în 6 trasee pliabile (`details.tgroup`). Datele sunt în `build.py` (listele PSI, PROF, CONS, SCO, FIR, TOT, SERV; traseul „Servicii” are carduri cu „Cere o ofertă”, fără insigna „În pregătire”); în `index.html` fiecare curs e un `<article class="card course">`, iar culoarea traseului vine din `--g` de pe `details`.
 
 ## Evenimente
-Secțiunea `#evenimente` are două tabele (viitoare / trecute), ca pe psy4vets.com/evenimente. Acum conțin doar mesajul de stare goală. Ca să adaugi un eveniment, copiază rândul din comentariul HTML din tabelul potrivit (în `index.html`, caută „Rând eveniment”), completează data, titlul și linkul de înscriere, apoi șterge rândul `class="empty"`. Când evenimentul a trecut, mută rândul în tabelul „trecute”.
+Secțiunea `#evenimente` are două carduri `.ws`: workshopul pentru psihologi (în fiecare duminică, 19:00–20:30, datele 15.11, 22.11, 29.11, 06.12, 13.12, backup 1 oră) și cel pentru profesori (data se anunță). Când se stabilesc datele pentru profesori, înlocuiește textul „Data și ora se anunță” cu orarul, ca la psihologi.
 
 ## De completat înainte de lansare
 - [ ] Linkurile reale ale comunităților (Facebook, WhatsApp, Telegram, Discord; vezi mai sus).
