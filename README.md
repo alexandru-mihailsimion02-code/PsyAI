@@ -22,20 +22,20 @@ Testat în Chromium headless: 0 erori în consolă și 0 încălcări CSP pe toa
 4. Singura cheie din localStorage este `psyai_notice_ok`.
 
 ## Comunitate și Resurse
-- Secțiunile `#comunitate` și `#resurse` urmează structura PsyInsomnia (două carduri de grup, nota „Reguli simple”, resurse pliabile).
-- **Butoanele „Alătură-te grupului” deschid acum un mesaj WhatsApp către Alex**, pentru că nu există încă linkuri de grup. Când creezi grupurile, înlocuiește valoarea `href` a celor două butoane `.btn.join` cu linkul grupului (Facebook sau invitația WhatsApp).
-- Același lucru pentru cardurile de Telegram și Discord (`.btn.join`, în total patru butoane).
+- Secțiunile `#comunitate` și `#resurse` urmează structura PsyInsomnia (patru carduri de comunitate, nota „Reguli simple”, resurse pliabile).
+- **Linkuri reale:** grupul de Facebook și serverul de Discord duc direct la linkurile lor; cardul Facebook are și butonul „Pagina de Facebook”. În footer sunt Facebook (PsyAI Academy), LinkedIn (PsyAI Consulting), Discord și Linktree.
+- Grupul de WhatsApp duce direct la invitația lui. **Încă fără link:** canalul de Telegram, al cărui buton deschide un mesaj WhatsApp către Alex. Când îl creezi, înlocuiește `href`-ul butonului `.btn.join` respectiv.
+- **Discord:** verifică în Discord că invitația e setată să nu expire (implicit invitațiile expiră).
 - Resursele sunt 4 linkuri oficiale; adaugă altele ca blocuri `<a class="res-link">` în `#resurseBody`.
 
-## Cursuri
-Cursurile sunt grupate în 6 trasee pliabile (`details.tgroup`). Datele sunt în `build.py` (listele PSI, PROF, CONS, SCO, FIR, TOT, SERV; traseul „Servicii” are carduri cu „Cere o ofertă”, fără insigna „În pregătire”); în `index.html` fiecare curs e un `<article class="card course">`, iar culoarea traseului vine din `--g` de pe `details`.
+## Aplicații
+Secțiunea `#aplicatii` (tab „Aplicații”) prezintă aplicațiile create cu AI. Acum conține PsyAI Prompt Engineering, cu linkul către pagina ei. Ca să adaugi o aplicație, copiază blocul `<article class="card app">` din `index.html` și schimbă titlul, descrierea și linkul. „Materiale recomandate” rămâne secțiune separată (`#resurse`).
 
 ## Evenimente
 Secțiunea `#evenimente` are două carduri `.ws`: workshopul pentru psihologi (în fiecare duminică, 19:00–20:30, datele 15.11, 22.11, 29.11, 06.12, 13.12, backup 1 oră) și cel pentru profesori (data se anunță). Când se stabilesc datele pentru profesori, înlocuiește textul „Data și ora se anunță” cu orarul, ca la psihologi.
 
 ## De completat înainte de lansare
-- [ ] Linkurile reale ale comunităților (Facebook, WhatsApp, Telegram, Discord; vezi mai sus).
-- [ ] În footer, la Florina Radu: emailul și telefonul (2 câmpuri galbene „[de completat]”).
+- [ ] Linkul canalului de Telegram (vezi mai sus).
 - [ ] În `confidentialitate.html` și `termeni.html`: cele 3 câmpuri galbene „[de completat: …]” (forma juridică, CUI/CIF, adresa).
 - [ ] Cursurile din `index.html` sunt conținut-schiță: verifică titlurile, descrierile și punctele din fiecare card.
 - [ ] Când ai datele reale: format, durată, tarif, linkuri de înscriere.
