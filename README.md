@@ -21,6 +21,9 @@ Testat în Chromium headless: 0 erori în consolă și 0 încălcări CSP pe toa
 3. `404.html` folosește linkuri absolute (`/`), deci funcționează corect pe un domeniu propriu sau pe `utilizator.github.io`; pe un proiect GitHub Pages (`utilizator.github.io/depozit/`) înlocuiește-le cu căi relative.
 4. Singura cheie din localStorage este `psyai_notice_ok`.
 
+## Lista de așteptare
+Toate acțiunile de listă de așteptare (butonul din hero, banda de apel la acțiune, cardul din Contact și butonul „Vreau să fiu anunțat” de la fiecare curs) deschid WhatsApp către 0749255366, cu un mesaj pre-completat (la cursuri include numele cursului). Butoanele „Cere o ofertă” de la servicii și aplicații rămân pe email.
+
 ## Comunitate și Resurse
 - Secțiunile `#comunitate` și `#resurse` urmează structura PsyInsomnia (patru carduri de comunitate, nota „Reguli simple”, resurse pliabile).
 - **Linkuri reale:** grupul de Facebook și serverul de Discord duc direct la linkurile lor; cardul Facebook are și butonul „Pagina de Facebook”. În footer sunt Facebook (PsyAI Academy), LinkedIn (PsyAI Consulting), Discord și Linktree.
