@@ -22,7 +22,7 @@ Testat în Chromium headless: 0 erori în consolă și 0 încălcări CSP pe toa
 4. Singura cheie din localStorage este `psyai_notice_ok`.
 
 ## Lista de așteptare
-Toate acțiunile de listă de așteptare (butonul din hero, banda de apel la acțiune, cardul din Contact și butonul „Vreau să fiu anunțat” de la fiecare curs) deschid WhatsApp către 0749255366, cu un mesaj pre-completat (la cursuri include numele cursului). Butoanele „Cere o ofertă” de la servicii și aplicații rămân pe email.
+Toate acțiunile de listă de așteptare (butonul din hero, banda de apel la acțiune, cardul din Contact și butonul „Vreau să fiu anunțat” de la fiecare curs) deschid WhatsApp către Florina (+40 735 510 034), cu un mesaj pre-completat (la cursuri include numele cursului). Butoanele „Cere o ofertă” de la servicii și aplicații rămân pe email.
 
 ## Comunitate și Resurse
 - Secțiunile `#comunitate` și `#resurse` urmează structura PsyInsomnia (patru carduri de comunitate, nota „Reguli simple”, resurse pliabile).
@@ -34,8 +34,11 @@ Toate acțiunile de listă de așteptare (butonul din hero, banda de apel la ac�
 ## Aplicații
 Secțiunea `#aplicatii` (tab „Aplicații”) prezintă aplicațiile create cu AI. Acum conține PsyAI Prompt Engineering, cu linkul către pagina ei. Ca să adaugi o aplicație, copiază blocul `<article class="card app">` din `index.html` și schimbă titlul, descrierea și linkul. „Materiale recomandate” rămâne secțiune separată (`#resurse`).
 
+## Cursuri comune între trasee
+Un curs poate apărea în mai multe trasee: în `build.py`, dicționarul `SHARE` leagă titlul cursului de traseele în care apare (psi, prof, cons, sco, fir, tot). Cardul arată „Și pentru: …” cu celelalte trasee. Cursurile se definesc o singură dată, în lista traseului lor de bază.
+
 ## Evenimente
-Secțiunea `#evenimente` are două carduri `.ws`: workshopul pentru psihologi (în fiecare duminică, 19:00–20:30, datele 15.11, 22.11, 29.11, 06.12, 13.12, backup 1 oră) și cel pentru profesori (data se anunță). Când se stabilesc datele pentru profesori, înlocuiește textul „Data și ora se anunță” cu orarul, ca la psihologi.
+Secțiunea `#evenimente` are: workshopul pentru psihologi (în fiecare duminică, 19:00–20:30, evenimente 2026 cu datele 15.11, 22.11, 29.11, 06.12, 13.12; preț redus 100 lei de la 150; ofertă pachet: plătești 4, primești 5, 400 lei în loc de 500), workshopul pentru profesori (data se anunță), condițiile (minim 10, maxim 20 participanți; înscrieri cel mai târziu cu 24 h înainte) și două liste de așteptare separate: workshopuri fizice (3 laptopuri disponibile) și workshopuri intensive de o zi (fizic sau online). Toate butoanele deschid WhatsApp către Florina, cu mesaj pre-completat.
 
 ## De completat înainte de lansare
 - [ ] Linkul canalului de Telegram (vezi mai sus).
